@@ -4,6 +4,10 @@ public class Main {
         return j / 2;
     }
 
+    public static String doString(String s){
+        return s + s;
+    }
+
     public static void main(String[] args) {
         String s = "Hello World!";
         System.out.println(s + " ");
@@ -17,6 +21,8 @@ public class Main {
         
         int k = dostuff(10);
         System.out.println(k);
+
+        System.out.println(doString("Hello"));
 
     }   
 
