@@ -1,4 +1,9 @@
 public class Main {
+
+    public static int dostuff(int j){
+        return j / 2;
+    }
+
     public static void main(String[] args) {
         String s = "Hello World!";
         System.out.println(s + " ");
@@ -9,6 +14,10 @@ public class Main {
             }
             System.out.println(i);
         }
+        
+        int k = dostuff(10);
+        System.out.println(k);
 
-    }
+    }   
+
 }
