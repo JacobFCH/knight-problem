@@ -1,3 +1,6 @@
+import utilities.Board;
+import utilities.Knight;
+
 public class Main {
 
     public static int dostuff(int j){
@@ -16,14 +19,22 @@ public class Main {
             if (i == 4){
                 continue;
             }
-            System.out.println(i);
+            //System.out.println(i);
         }
         
         int k = dostuff(10);
-        System.out.println(k);
+        //System.out.println(k);
 
-        System.out.println(doString("Hello"));
-
+        //System.out.println(doString("Hello"));
+        
+        Board b = new Board();
+        b.setBoardDim(5,5);
+        int[] d = b.getBoardDim();
+        int[] p = {5,5};
+        boolean check = b.isLegal(p);
+        
+        b.initBoard();
+        
     }   
 
 }
