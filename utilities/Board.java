@@ -35,7 +35,7 @@ public class Board {
 	}
 	
 	public void initBoard() {
-		binaryMap = new boolean[height][width];
+		binaryMap = new boolean[height + 1][width + 1];
 	}
 	
 	public boolean isLegal(int[] position) {

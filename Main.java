@@ -12,28 +12,22 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String s = "Hello World!";
-        System.out.println(s + " ");
-
-        for (int i = 0; i < 10; i++){
-            if (i == 4){
-                continue;
-            }
-            //System.out.println(i);
-        }
-        
-        int k = dostuff(10);
-        //System.out.println(k);
-
-        //System.out.println(doString("Hello"));
         
         Board b = new Board();
         b.setBoardDim(5,5);
         int[] d = b.getBoardDim();
         int[] p = {5,5};
+        b.initBoard();
         boolean check = b.isLegal(p);
         
-        b.initBoard();
+        
+        
+        Knight knight = new Knight();
+        knight.setPosition(2,2);
+        int[] k_pos = knight.getPosition();
+        int[][] new_ks = knight.generateNewKnightPositions();
+        //System.out.println(4 % 4);
+        
         
     }   
 
