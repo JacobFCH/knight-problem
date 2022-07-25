@@ -1,2 +1,2 @@
 # knight-problem
-Solving the knihgt problem
+Solving the knight problem
